@@ -67,7 +67,7 @@ section.land-page1 {
   background-origin: content-box;
   background-repeat: no-repeat;
   height: 450px;
-  margin-bottom: 300px;
+  margin-bottom: 150px;
 }
 
 section.land-page1 .left-col {
@@ -120,18 +120,27 @@ form button {
   cursor: pointer;
 }
 
+.curve {
+  background: url('../images/bg-curve-desktop.svg');
+  width: 100%;
+  height: 120px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 section.land-page2 {
   display: flex;
   padding: 0 60px;
 
-  background-image: url('../images/bg-curve-desktop.svg'),
-    url('../images/illustration-2.svg');
+  background-image: url('../images/illustration-2.svg');
   /* width: 100%; */
-  background-position: top, right;
+  background-position: right;
   background-size: contain;
   background-origin: content-box;
   background-repeat: no-repeat;
   height: 450px;
+  background-color: var(--lightGrayishBlue);
 }
 
 .land-page2 .left-col {
@@ -150,14 +159,26 @@ section.land-page2 {
 .land-page2 .left-col p {
   font-family: var(--openSans);
   max-width: 520px;
-  margin: 10px;
+  margin-bottom: 10px;
   font-size: 16px;
 }
 .land-page2 .left-col h6 {
   color: var(--moderateCyan);
-  text-decoration: underline;
-  /* line-height:x; */
-  text-decoration-line: underline;
+  padding-bottom: 0px;
+  border-bottom: 1px solid var(--moderateCyan);
   font-size: 12px;
   font-family: var(--openSans);
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  height: 22px;
+  margin-bottom: 30px;
+}
+
+.land-page2 .left-col .quote-cont {
+  background-color: #fff;
+  width: 350px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 3px;
 }
