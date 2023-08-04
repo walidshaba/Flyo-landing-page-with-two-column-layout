@@ -139,7 +139,7 @@ section.land-page2 {
   background-size: contain;
   background-origin: content-box;
   background-repeat: no-repeat;
-  height: 450px;
+  height: 500px;
   background-color: var(--lightGrayishBlue);
 }
 
@@ -179,6 +179,37 @@ section.land-page2 {
   background-color: #fff;
   width: 350px;
   height: 200px;
-  padding: 10px;
-  border-radius: 3px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.quote-cont p {
+  font-size: 15px;
+  font-family: var(--raleway);
+}
+.quote-cont .profile {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile .dp-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.dp-img img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.name-pos h3 {
+  font-size: 14px;
+  font-family: var(--raleway);
+  font-family: 700;
+}
+
+p {
+  font-size: 12px;
 }
