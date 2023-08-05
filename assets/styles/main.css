@@ -131,15 +131,15 @@ form button {
 
 section.land-page2 {
   display: flex;
+  align-items: center;
   padding: 0 60px;
-
   background-image: url('../images/illustration-2.svg');
   /* width: 100%; */
   background-position: right;
-  background-size: contain;
+  background-size: 600px;
   background-origin: content-box;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 700px;
   background-color: var(--lightGrayishBlue);
 }
 
@@ -188,7 +188,7 @@ section.land-page2 {
 }
 .quote-cont .profile {
   display: flex;
-  width: 120px;
+  width: 160px;
   justify-content: space-between;
   align-items: center;
 }
@@ -210,6 +210,90 @@ section.land-page2 {
   font-family: 700;
 }
 
-p {
-  font-size: 12px;
+.name-pos span {
+  font-size: 10px;
+  font-family: var(--openSans);
+}
+
+footer {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .newletter {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--desaturatedBlue);
+  padding: 0 200px 0 60px;
+  color: #fff;
+}
+
+.newletter .left-col {
+  width: 480px;
+}
+
+.newletter .left-col h1 {
+  font-size: 27px;
+  font-family: var(--raleway);
+  margin-bottom: 20px;
+}
+
+.newletter .left-col p {
+  font-size: 16px;
+  font-family: var(--raleway);
+  font-family: 400;
+}
+
+.newletter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newletter form input {
+  height: 40px;
+  width: 400px;
+  padding: 0 20px;
+  font-family: var(--openSans);
+  border: 1.5px solid var(--lightGray);
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.newletter form button {
+  width: 200px;
+  border: none;
+  background-color: var(--brightBlue);
+  color: var(--lightGrayishBlue);
+  font-family: var(--openSans);
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px var(--desaturatedBlue);
+  cursor: pointer;
+  height: 40px;
+}
+
+footer .contacts {
+  display: flex;
+  background-color: var(--veryDarkBlue);
+  height: 500px;
+  flex-direction: row;
+  justify-content: space-between;
+
+  align-items: center;
+  color: #fff;
+  padding: 0 300px 0 60px;
+  position: relative;
+}
+.contacts .ft-logo {
+  width: 150px;
+  position: absolute;
+  top: 50px;
+}
+.contacts .col1 {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
 }
