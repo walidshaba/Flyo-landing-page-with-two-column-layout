@@ -216,7 +216,7 @@ section.land-page2 {
 }
 
 footer {
-  height: 800px;
+  height: 700px;
   display: flex;
   flex-direction: column;
 }
@@ -278,10 +278,9 @@ footer .newletter {
 footer .contacts {
   display: flex;
   background-color: var(--veryDarkBlue);
-  height: 500px;
+  height: 400px;
   flex-direction: row;
   justify-content: space-between;
-
   align-items: center;
   color: #fff;
   padding: 0 300px 0 60px;
@@ -290,10 +289,43 @@ footer .contacts {
 .contacts .ft-logo {
   width: 150px;
   position: absolute;
-  top: 50px;
+  top: 60px;
 }
+
 .contacts .col1 {
   display: flex;
   flex-direction: column;
   list-style: none;
+  height: 100px;
+  font-family: var(--openSans);
+  font-size: 16px;
+}
+
+.contacts .col1 .parent {
+  display: flex;
+  flex-direction: row;
+}
+.contacts .col1 .parent svg {
+  margin-right: 15px;
+}
+.contacts .col1 li {
+  margin-bottom: 10px;
+}
+
+.contacts .col2 {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.col2 li {
+  font-family: var(--openSans);
+  margin-bottom: 20px;
+  transition: all ease-in-out 0.35s;
+  cursor: pointer;
+}
+.col2 li:hover {
+  color: var(--brightBlue);
 }
