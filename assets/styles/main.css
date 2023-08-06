@@ -118,12 +118,13 @@ section.land-page1 .left-col {
 }
 .left-col form p {
   display: none;
-}
-.left-col form p.active {
   position: absolute;
   top: 45px;
   color: red;
   font-family: var(--raleway);
+}
+.left-col form p.active {
+  display: unset;
 }
 
 form button {
@@ -299,6 +300,7 @@ footer .newletter {
   position: absolute;
   top: 42px;
   font-size: 13px;
+  display: none;
 }
 .newletter form button {
   width: 200px;
