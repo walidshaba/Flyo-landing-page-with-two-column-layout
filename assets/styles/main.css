@@ -55,6 +55,9 @@ nav ul {
   justify-content: space-between;
   font-family: var(--raleway);
 }
+nav ul li {
+  cursor: pointer;
+}
 
 section.land-page1 {
   display: flex;
@@ -96,17 +99,31 @@ section.land-page1 .left-col {
   height: 40px;
   max-width: 520px;
   justify-content: space-between;
+  position: relative;
 }
 
-form input {
+.left-col form input {
   width: 300px;
   padding: 0 20px;
   font-family: var(--openSans);
   border: 1.5px solid var(--lightGray);
   border-radius: 3px;
 }
-form input:focus {
+
+.left-col form input.active {
+  border: 1.5px solid red;
+}
+.left-col form input:focus {
   outline: none;
+}
+.left-col form p {
+  display: none;
+}
+.left-col form p.active {
+  position: absolute;
+  top: 45px;
+  color: red;
+  font-family: var(--raleway);
 }
 
 form button {
@@ -119,7 +136,9 @@ form button {
   box-shadow: 2px 2px 5px var(--lightGray);
   cursor: pointer;
 }
-
+form button:hover {
+  background-color: hsla(224, 93%, 58%, 0.815);
+}
 .curve {
   background: url('../images/bg-curve-desktop.svg');
   width: 100%;
@@ -173,6 +192,16 @@ section.land-page2 {
   align-items: center;
   height: 22px;
   margin-bottom: 30px;
+}
+.land-page2 .left-col h6:hover {
+  border-bottom: 1px solid hsla(170, 45%, 43%, 0.582);
+  color: hsla(170, 45%, 43%, 0.582);
+}
+.land-page2 .left-col h6 span svg use {
+  fill: #3da08f;
+}
+.land-page2 .left-col h6:hover span svg use {
+  fill: hsla(170, 45%, 43%, 0.582);
 }
 
 .land-page2 .left-col .quote-cont {
@@ -251,6 +280,7 @@ footer .newletter {
 .newletter form {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .newletter form input {
@@ -260,9 +290,16 @@ footer .newletter {
   font-family: var(--openSans);
   border: 1.5px solid var(--lightGray);
   border-radius: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
-
+.newletter form input.active {
+  border: 1.5px solid red;
+}
+.newletter form p {
+  position: absolute;
+  top: 42px;
+  font-size: 13px;
+}
 .newletter form button {
   width: 200px;
   border: none;
@@ -374,11 +411,13 @@ footer .contacts {
   padding: 8px;
   margin-right: 10px;
   cursor: pointer;
+  transition: all ease-in-out 0.35s;
 }
 
 .col4 div svg {
   width: 30px;
   height: 30px;
+  transition: all ease-in-out 0.35s;
 }
 .col4 div:hover {
   border-color: var(--brightBlue);
@@ -387,6 +426,6 @@ footer .contacts {
 #oncolos {
   fill: #fff;
 }
-svg:hover #oncolos {
+.col4 div:hover svg #oncolos {
   fill: var(--brightBlue);
 }
